@@ -101,7 +101,7 @@
         <lib.logstash-logback-encoder.version>7.3</lib.logstash-logback-encoder.version>
         <lib.lucene.version>8.11.3</lib.lucene.version>
         <lib.open-vulnerability-clients.version>5.1.1</lib.open-vulnerability-clients.version>
-        <lib.packageurl.version>1.4.1</lib.packageurl.version>
+        <lib.packageurl.version>1.5.0</lib.packageurl.version>
         <lib.pebble.version>3.2.0</lib.pebble.version>
         <lib.resilience4j.version>2.1.0</lib.resilience4j.version>
         <lib.woodstox.version>6.5.1</lib.woodstox.version>
@@ -544,8 +544,7 @@
                         <phase>prepare-package</phase>
                         <configuration>
                             <target>
-                                <copy file="${project.build.directory}/bom.json"
-                                      tofile="${project.build.directory}/${project.artifactId}/.well-known/sbom"/>
+                                <copy file="${project.build.directory}/bom.json" tofile="${project.build.directory}/${project.artifactId}/.well-known/sbom"/>
                             </target>
                         </configuration>
                         <goals>
